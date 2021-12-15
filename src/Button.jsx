@@ -1,8 +1,13 @@
+import classNames from "classnames";
 import React from "react";
 
-function Button() {
+function Button(props) {
     return (
-        <div></div>
+        <button
+            className={classNames('button', {
+                'button--outline': props.outline
+            })}>
+        </button>
     )
 }
 
