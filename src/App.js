@@ -1,7 +1,9 @@
 import React from "react";
+import {
+  Route
+} from "react-router-dom";
 import { Header } from './components';
-import { Home, Cart } from "./pages";
-import { Route } from 'react-router-dom';
+import { Cart, Home } from './pages';
 
 
 function App() {
@@ -10,8 +12,8 @@ function App() {
     <div className="wrapper">
       <Header />
       <div className="content">
-        <Route exact path='/' components={Home} />
-        <Route exact path='/cart' components={Cart} />
+        <Route path="/" element={<Home />} exact />
+        <Route path="/cart" element={<Cart />} exact />
       </div>
     </div>
   );
