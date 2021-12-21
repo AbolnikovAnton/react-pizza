@@ -1,6 +1,20 @@
 import React from 'react'
 
 function PizzaBlock() {
+  // const avilableTypes = ["Тонкое", "Традиционное"];
+  // const avilableSizes = [26, 30, 40];
+
+  // const [activeType, setActiveType] = useState(types[0]);
+  // const [activeSize, setActiveSize] = useState(sizes[0]);
+
+  // const onSelectTypes = (index) => {
+  //   setActiveType(index);
+  // };
+
+  // const onSelectSize = (index) => {
+  //   setActiveSize(index);
+  // };
+
     return (
         <div className="pizza-block">
         <img

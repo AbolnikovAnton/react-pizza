@@ -3,6 +3,8 @@ import { Categories, SortPopup, PizzaBlock } from '../components';
 
 
 function Home({items}) {
+console.log(items);
+
     return (
         <div className="container">
         <div className="content__top">
@@ -24,7 +26,7 @@ function Home({items}) {
         <h2 className="content__title">Все пиццы</h2>
         <div className="content__items">
           {items.map((item) => <PizzaBlock kay={item.id} name={item.name}/>)}
-        </div>
+         </div>
         </div>
     )
 }
