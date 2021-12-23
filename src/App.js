@@ -8,7 +8,7 @@ import { Cart, Home } from './pages';
 
 
 function App() {
-  const [pizzas, setPizzas] = useState();
+  const [pizzas, setPizzas] = useState([]);
   // console.log(pizzas);
 
   useEffect(() => {
