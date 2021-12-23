@@ -9,12 +9,12 @@ import { Cart, Home } from './pages';
 
 function App() {
   const [pizzas, setPizzas] = useState([]);
-  // console.log(pizzas);
 
   useEffect(() => {
     fetch('http://localhost:3000/db.json')
       .then(data => data.json())
       .then(json => setPizzas(json.pizzas))
+
   }, [])
 
 
