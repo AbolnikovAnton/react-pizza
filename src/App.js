@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import {
   Route,
@@ -11,10 +12,8 @@ function App() {
   const [pizzas, setPizzas] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/db.json')
-      .then(data => data.json())
-      .then(json => setPizzas(json.pizzas))
-
+    axios.get('http://localhost:3000/db.json')
+      .then(({ data }) => setPizzas(data.pizzas))
   }, [])
 
 
