@@ -4,6 +4,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './scss/app.scss';
+import { createStore } from 'redux'
+
 
 ReactDOM.render(
   <React.StrictMode>
