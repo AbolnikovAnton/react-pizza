@@ -12,8 +12,14 @@ import { setPizzas } from './redux/actions/pizzas';
 
 
 
-function App({ items }) {
+function App() {
   const dispatch = useDispatch()
+  const { items } = useSelector(({ pizzas, filters }) => {
+    return {
+      items: pizzas.items,
+      sortBy: filters.sortBy
+    }
+  })
 
   useEffect(() => {
     axios.get('http://localhost:3000/db.json')
