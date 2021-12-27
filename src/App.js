@@ -11,7 +11,7 @@ function App() {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios.get('http://localhost:3000/db.json')
+    axios.get('http://localhost:3000/pizzas')
       .then(({ data }) => dispatch(setPizzas(data.pizzas)))
   }, [])
 
