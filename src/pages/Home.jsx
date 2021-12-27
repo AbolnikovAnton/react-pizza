@@ -1,7 +1,15 @@
-import React from 'react'
-import { Categories, SortPopup, PizzaBlock } from '../components';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { Categories, PizzaBlock, SortPopup } from '../components';
 
-function Home({items}) {
+function Home({}) {
+  const { items } = useSelector(({ pizzas, filters }) => {
+    return {
+      items: pizzas.items,
+      sortBy: filters.sortBy
+    }
+  })
+
 
     return (
         <div className="container">
