@@ -1,13 +1,19 @@
 import React, {useState} from 'react'
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
+import LoadingBlock from './LoadingBlock';
 
-function PizzaBlock( {imageUrl, name, price, types, sizes}) {
+
+function PizzaBlock( {imageUrl, name, price, types, sizes, isLoading}) {
   const avilableTypes = ["Тонкое", "Традиционное"];
   const avilableSizes = [26, 30, 40];
 
   const [activeType, setActiveType] = useState(types[0]);
   const [activeSize, setActiveSize] = useState(sizes[0]);
+
+  if(isLoading){
+    return <LoadingBlock />
+  }
 
   const onSelectTypes = (index) => {
     setActiveType(index);
@@ -16,6 +22,7 @@ function PizzaBlock( {imageUrl, name, price, types, sizes}) {
   const onSelectSize = (index) => {
     setActiveSize(index);
   };
+ 
 
     return (
         <div className="pizza-block">
