@@ -44,7 +44,7 @@ const SortPopup = memo(
                       fill="#2C2C2C"
                     />
                   </svg>
-                  <b>Сортировка по:</b>
+                  <b>Sorted by:</b>
                   <span onClick={toggleVisiblePopup}>{activeLable}</span>
                 </div>
                 {visiblePopup && <div className="sort__popup">

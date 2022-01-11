@@ -12,9 +12,9 @@ const categoryNames = [
   "Закрытые",
 ];
 const sortItems = [
-  {name: "популярности", type: "popular"},
-  {name: "цене", type: "price"},
-  {name: "алфавиту", type: "alphabet"},
+  {name: "popular", type: "popular"},
+  {name: "price", type: "price"},
+  {name: "alphabet", type: "alphabet"},
 ];
 
 function Home() {

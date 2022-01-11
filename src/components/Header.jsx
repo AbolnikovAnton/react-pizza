@@ -13,7 +13,7 @@ function Header() {
           <img width="38" src="./img/pizza-logo.svg" alt="Pizza logo" />
           <div>
             <h1>Pizza Amore</h1>
-            <p>самая вкусная пицца во вселенной</p>
+            <p>The most delicious pizza in the universe</p>
           </div>
         </div>
         </Link>
@@ -21,7 +21,7 @@ function Header() {
         <div className="header__cart">
           <Link to='Cart'>
           <Button href="/cart.html" className="button button--cart">
-            <span>520 ₽</span>
+            <span>520 ⌘</span>
             <div className="button__delimiter"></div>
             <svg
               width="18"
